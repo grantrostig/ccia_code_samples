@@ -14,7 +14,7 @@ void f()
         threads.push_back(std::thread(do_work,i));
     }
     std::for_each(threads.begin(),threads.end(),
-        std::mem_fn(&std::thread::join));
+        std::mem_fn(&std::thread::join));  // re: member function
 }
 
 int main()
